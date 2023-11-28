@@ -1,10 +1,8 @@
 show databases;
-use arqcli;
-desc regcli;
-drop database arqcli;
 create database if not exists arqcli;
+use arqcli;
 create table if not exists regcli (
-id int not null auto_increment primary key,
+id int not null auto_increment ,
 nome varchar(120) not null unique,
 salario float(8,2),
 data_nasc date,
@@ -14,5 +12,8 @@ sexo enum('M', 'F'),
 peso dec(5,2),
 altura dec(3,2),
 nacionalidade varchar(20) default 'Brasil',
-hoby text
+hoby text,
+primary key(id)
 )default charset = utf8mb4;
+desc regcli;
+drop database arqcli;
