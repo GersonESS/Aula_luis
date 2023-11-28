@@ -1,16 +1,25 @@
+show databases;
+show tables;
+create database if not exists teste;
 use teste;
 create table pessoas (
-id int not null auto_increment primary key,
+id int not null auto_increment,
 nome varchar(30),
 nasc date,
 sexo enum('M', 'F'),
 peso dec(5,2),
 altura dec(3,2),
-nacionalidade varchar(20) default 'Brasil'
+nacionalidade varchar(20) default 'Brasil',
+primary key (id)
 )default charset = utf8mb4;
 desc pessoas;
 describe pessoas;
+drop database teste;
 INSERT INTO pessoas 
-(nome, nasc, sexo, altura, nacionalidade)
+(nome, nasc, sexo, peso, altura, nacionalidade)
  VALUES 
  ('Maria Joana Santos', '2023-11-01', 'M', '80.50', '1.72', '');
+ INSERT INTO pessoas
+ VALUES 
+ ('Geron Santos', '2023-11-01', 'M', '80.50', '1.72', '');
+
