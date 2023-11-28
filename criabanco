@@ -1,4 +1,6 @@
 show databases;
+use arqcli;
+desc regcli;
 drop database arqcli;
 create database if not exists arqcli;
 create table if not exists regcli (
