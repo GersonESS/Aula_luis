@@ -1,4 +1,5 @@
 show databases;
+show tables;
 create database if not exists arqcli;
 use arqcli;
 create table if not exists regcli (
@@ -16,4 +17,5 @@ hoby text,
 primary key(id)
 )default charset = utf8mb4;
 desc regcli;
+status;
 drop database arqcli;
