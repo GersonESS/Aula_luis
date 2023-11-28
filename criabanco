@@ -21,9 +21,24 @@ status;
 insert into regcli 
 (nome, salario, data_nasc, cidade ,estado ,sexo ,peso ,altura ,nacionalidade ,hoby) 
 values 
+<<<<<<< HEAD
 ( 'Gerson', '1500.12', '1957-03-07', 'Belo Horizonte', 'MG', 'M', '80.53', '1.72', 'Bras', 'Corrida');
 
 drop database arqcli;
 
 select * from regcli;
 select id, nome, data_nasc from regcli;
+=======
+( 'Bru', '4500.12', '1984-03-07', 'Pedra Azil', 'MG', 'F', '50.53', '1.62', 'Bras', 'GOLO');
+
+insert into regcli 
+(nome, salario, data_nasc, cidade ,estado ,sexo ,peso ,altura ,nacionalidade ,hoby) 
+values 
+( 'Gerson', '1500.12', '1957-03-07', 'Belo Horizonte', 'MG', 'M', '80.53', '1.72', 'Bras', 'Corrida'),
+( 'GersonES', '1500.12', '1957-03-07', 'Belo Horizonte', 'MG', 'M', '80.53', '1.72', 'Bras', 'Corrida'),
+( 'Gerson Eustaquio Dos Santos', '1500.12', '1957-03-07', 'Belo Horizonte', 'MG', 'M', '80.53', '1.72', 'Bras', 'Corrida');
+
+drop database arqcli;
+
+select * from regcli;
+>>>>>>> a0606044aaf29efed5204221a567fe643aedec48
