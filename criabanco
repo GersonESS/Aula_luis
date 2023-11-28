@@ -1,0 +1,14 @@
+show databases;
+create database if not exists arqcli;
+create table if not exists cli (
+id int not null auto_increment primary key,
+nome varchar(120) not null unique,
+data_nasc date,
+cidade varchar(60),
+estado varchar 2,
+sexo enum('M', 'F'),
+peso dec(5,2),
+altura dec(3,2),
+nacionalidade varchar(20) default 'Brasil',
+hoby text
+)default charset = utf8mb4;
