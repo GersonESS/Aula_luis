@@ -1,7 +1,7 @@
 show databases;
 drop database arqcli;
 create database if not exists arqcli;
-create table if not exists cliente (
+create table if not exists regcli (
 id int not null auto_increment primary key,
 nome varchar(120) not null unique,
 data_nasc date,
