@@ -2,7 +2,8 @@
 include("conexao.php");
 $nome=$_POST["nome"];
 //$idade=$_POST["data_nasc"];
-$sql="INSERT INTO clientes (nome, ) VALUE ('$nome')";
+//$sql="INSERT INTO cli (nome, ) VALUE ('$nome')";
+$sql="INSERT INTO clientes (codigo, nome, idade) VALUE ('$codigo', '$nome', '$idade')";
 if(mysqli_query($conexao, $sql)){
     echo("<h1>Cadastrado com sucesso</h1>");
 }else{
