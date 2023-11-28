@@ -1,7 +1,7 @@
 <?php
 include("conexao.php");
 $deletar=$_POST['deletar'];
-$sql="DELETE FROM clientes WHERE codigo='$deletar'";
+$sql="DELETE FROM regcli WHERE id='$deletar'";
 $resultado=mysqli_query($conexao, $sql);
 if($resultado){
     echo"<h1>Cliente excluido com sucesso</h1>";
