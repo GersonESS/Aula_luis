@@ -5,7 +5,7 @@ use arqcli;
 create table if not exists regcli (
 id int not null auto_increment ,
 nome varchar(120) not null unique,
-salario float(8,2),
+salario dec(8,2),
 data_nasc date,
 cidade varchar(60),
 estado varchar (2),
@@ -19,3 +19,4 @@ primary key(id)
 desc regcli;
 status;
 drop database arqcli;
+select * from regcli;

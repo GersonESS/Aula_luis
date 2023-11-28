@@ -1,0 +1,16 @@
+use teste;
+create table pessoas (
+id int not null auto_increment primary key,
+nome varchar(30),
+nasc date,
+sexo enum('M', 'F'),
+peso dec(5,2),
+altura dec(3,2),
+nacionalidade varchar(20) default 'Brasil'
+)default charset = utf8mb4;
+desc pessoas;
+describe pessoas;
+INSERT INTO pessoas 
+(nome, nasc, sexo, altura, nacionalidade)
+ VALUES 
+ ('Maria Joana Santos', '2023-11-01', 'M', '80.50', '1.72', '');
