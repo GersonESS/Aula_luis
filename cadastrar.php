@@ -18,4 +18,4 @@ if(mysqli_query($conexao, $sql)){
 }
 mysqli_close($conexao);
 ?>
-<!--,sexo ,peso ,altura ,nacionalidade ,hoby
+<!-- ,peso ,altura ,nacionalidade ,hoby
