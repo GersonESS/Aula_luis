@@ -38,4 +38,5 @@ values
 
 drop database arqcli;
 
-select * from regcli;
+status;
+select user();
