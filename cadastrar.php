@@ -5,11 +5,11 @@
     $cidade=$_POST["cidade"];
     $estado=$_POST["estado"];
     $data_nasc=$_POST["data_nasc"];
-
+    $sexo=$_POST['sexo'];
     $sql="INSERT INTO regcli 
-                (nome, salario, data_nasc, cidade ,estado) 
+                (nome, salario, data_nasc, cidade ,estado ,sexo) 
     VALUE
-                ('$nome', '$salario', '$data_nasc', '$cidade', '$estado')";
+                ('$nome', '$salario', '$data_nasc', '$cidade', '$estado', '$sexo')";
 
 if(mysqli_query($conexao, $sql)){
     echo("<h1>Cadastrado com sucesso</h1>");

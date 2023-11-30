@@ -68,7 +68,7 @@
         #data_nasc
         {
             border: none;
-            padding: 4px;
+            padding: 6px;
             border-radius: 10px;
             outline: none;
         }
@@ -112,15 +112,14 @@
                     </div>   
                         <br><br>
                     <div class="inputBox">
-                        <input type="number" name="salario" id="salario" step="0.01" class="inputUser" required>
+                        <input type="number" name="salario" id="salario" class="inputUser" required>
                         <label for="salario" class="labelInput">Salario  </label>
                     </div>
                         <br><br>
+                    <div class="inputBox">
                         <label for="data_nasc"><b>Data de Nacimento:</b></label>
                         <input type="date" name="data_nasc" id="data_nasc" class="" required>
-                        <br><br>
-                        Sexo: <input type="radio" name="sexo" value="M" checked> Masculino
-                        <input type="radio" name="sexo" value="F"> Feminino<br>
+                    </div>
                         <br><br>
                         <input type="submit" name="submit" id="submit" value=Cadastrar Cliente>
                 </fieldset>
