@@ -4,5 +4,6 @@
  SELECT @@hostname;
  SHOW VARIABLES LIKE 'hostname';
  passos:
- 1 ir para o diretorio C:\Program Files\MySQL\MySQL Server X.X\bin\mysql.exe
+ 1 ir para o diretorio cd \Program Files\MySQL\MySQL Server*
+                       cd bin
  2 execultar mysql -u root -p -h localhost -P 3306
