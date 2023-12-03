@@ -26,6 +26,15 @@ values
 drop database arqcli;
 
 select * from regcli;
+select * ,if (salario>3000,'BOM','Baixo') as Classe from regcli;
+select * ,
+    case 
+        when salario >=3000 then 'Bom' 
+        when (salario <3000 and  salario >1001.05) then 'Medio' 
+        when salario <1002.10 then 'Baixo'
+    end as Classe
+    from regcli;
+
 select id, nome, data_nasc from regcli;
 ( 'Bru', '4500.12', '1984-03-07', 'Pedra Azil', 'MG', 'F', '50.53', '1.62', 'Bras', 'GOLO');
 
